@@ -1,0 +1,420 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato";
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  position: sticky;
+  top: 0;
+  background-color: aliceblue;
+  box-shadow: 1px 1px 5px grey;
+}
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.header-div button {
+  width: 110px;
+  height: 30px;
+  background-color: #ef7822;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: #ffff;
+  cursor: pointer;
+}
+.logo {
+  width: 120px;
+}
+.hero-appa {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ef7822;
+  gap: 40px;
+}
+.hero-logo {
+  width: 480px;
+  height: 480px;
+}
+.hero-sec-section {
+  text-align: center;
+  color: #ffff;
+  padding: 10px 0;
+}
+.hero-sec-section h1 {
+  font-size: 40px;
+}
+.hero-sec-section p {
+  font-size: 16px;
+  padding: 30px 20px;
+  line-height: 20px;
+  width: 30rem;
+}
+.hero-sec-section button {
+  width: 110px;
+  height: 30px;
+  background-color: #ffff;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: #000;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#contentContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #ffff;
+  box-shadow: 1px 2px 2px grey;
+  position: absolute;
+  padding: 2rem 1rem;
+  z-index: 3;
+  margin-top: 20px;
+  margin-left: -30rem;
+  width: fit-content;
+  /* border-radius: 10px; */
+  width: 700px;
+  visibility: hidden;
+}
+nav {
+  position: relative;
+}
+#navHeading {
+  cursor: pointer;
+  font-weight: 100;
+  font-size: 14px;
+}
+.product-p {
+  font-size: 12px;
+  padding: 8px;
+  letter-spacing: 1px;
+}
+.specialities-appa,
+.advantages-appa {
+  text-align: center;
+  margin: 3rem 0;
+}
+.specialities-appa div h2 {
+  /* font-size: 32px; */
+  padding-bottom: 5px;
+}
+.specialities-appa-sec {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 30px;
+  margin: 3rem 0;
+}
+.spec {
+  padding-top: 10px;
+  width: 24rem;
+  font-size: 13px;
+}
+.learn {
+  width: 140px;
+  height: 35px;
+  color: #ffff;
+  background-color: #ef7822;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.sec-advantages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  text-align: left;
+  padding: 2.5rem;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+.sec-advantages div p {
+  font-size: 13px;
+  padding-top: 8px;
+}
+.sec-advantages div h5 {
+  font-weight: 700;
+  padding-top: 8px;
+}
+.Where-appa {
+  text-align: center;
+  background-color: #ef7822;
+}
+.area {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.area button {
+  width: 130px;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-family: "lato";
+  font-weight: 600;
+}
+.where {
+  padding: 2rem;
+  color: #ffff;
+}
+.where h2 {
+  letter-spacing: 1px;
+}
+.appa-download {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 2rem;
+  margin-top: 5rem;
+}
+.store {
+  width: 100px;
+}
+.appa-download div h3 {
+  font-size: 28px;
+}
+.appa-download div p {
+  width: 26rem;
+  padding: 8px;
+  font-size: 12px;
+}
+.group {
+  height: 350px;
+}
+.joinn {
+  text-align: center;
+}
+.joinn-dis {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+}
+.join-img {
+  height: 200px;
+  width: 230px;
+}
+.round {
+  border-radius: 15px;
+}
+.joinn-dis div h3 {
+  font-weight: 300;
+  padding: 15px;
+  font-size: 15px;
+}
+.joinn-dis div p {
+  width: 24rem;
+  font-size: 14px;
+  padding: 10px;
+}
+.joinn-btn {
+  width: 120px;
+  height: 35px;
+  background-color: #ef7822;
+  color: #ffff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  letter-spacing: 1px;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #ffff;
+  padding: 4.5rem 1rem;
+  margin-top: 3rem;
+}
+.footer-main {
+  background: #8f4c1a;
+}
+.footer-sub p {
+  padding: 10px 0;
+  font-size: 11px;
+}
+.footer-img {
+  display: block;
+  width: 100px;
+  padding: 5px;
+}
+hr {
+  width: 70%;
+  margin-left: 40px;
+}
+.footer-sec {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #ffff;
+}
+.footer-sec span {
+  opacity: 0.8;
+  font-size: 12px;
+  padding: 10px;
+}
+.social {
+  width: 130px;
+}
+
+@media (max-width: 913px) {
+  .header-div {
+    display: unset;
+    /* margin-right: -10px; */
+  }
+  .hero-logo {
+    width: 300px;
+    height: 300px;
+  }
+  .hero-appa {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .hero-sec-section p {
+    width: 24rem;
+    text-align: center;
+  }
+  .hero-sec-section h1 {
+    font-size: 27px;
+    width: 23rem;
+    text-align: center;
+  }
+  nav {
+    padding-bottom: 10px;
+  }
+  #contentContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin-left: -10rem;
+  }
+  .spec {
+    /* width: 19rem;
+         */
+    width: 22rem;
+    text-align: center;
+  }
+  .specialities-appa div p {
+    font-size: 12px;
+  }
+  .specialities-appa-sec {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .sec-advantages {
+    grid-template-columns: auto;
+    text-align: center;
+  }
+  .sec-advantages div p {
+    font-family: 12px;
+    width: 17rem;
+  }
+  .area {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .area button {
+    width: 100px;
+    height: 25px;
+  }
+  .where h2 {
+    font-size: 18px;
+  }
+  .where p {
+    font-size: 12px;
+  }
+  .appa-download {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+  }
+  .group {
+    height: 220px;
+  }
+  .appa-download div p {
+    width: 17rem;
+  }
+  .appa-download div h3 {
+    font-size: 20px;
+  }
+  .joinn-dis {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .joinn-btn {
+    margin-top: 5px;
+  }
+  .footer {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1rem 1rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .footer-sec {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .where img {
+    height: 50px;
+  }
+  #contentContainer {
+    margin-left: -12rem;
+  }
+
+  .join-img {
+    height: 180px;
+    width: 180px;
+  }
+  .joinn-dis div p {
+    width: fit-content;
+  }
+  .joinn-btn {
+    margin-top: 0;
+  }
+  .spec {
+    width: 22rem;
+    padding: 0 10px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 290px) {
+  .hero-sec-section p {
+    width: 20rem;
+  }
+  #contentContainer {
+    margin-left: -9rem;
+    width: fit-content;
+  }
+  .hero-logo {
+    width: 200px;
+    height: 200px;
+  }
+}
