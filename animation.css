@@ -1,0 +1,118 @@
+.hoverStyle2 {
+  border-radius: 5px;
+}
+.hoverStyle2:hover {
+  color: #fff;
+  background: rgb(153, 131, 131);
+}
+.hoverStyle3:hover {
+  color: #fff;
+  background: #dd894d;
+}
+
+/* Animate the navigation bar */
+.header-div {
+  animation: slideInDown 1s forwards;
+}
+
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* 
+   */
+/* Animate the buttons */
+.float-01 {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*  */
+
+/* Fade in the hero section */
+/* .hero-appa {
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+/*  */
+
+/* Slide in the specialities */
+.specialities-appa {
+  animation: slideInLeft 1s forwards;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/*  */
+
+/* Rotate the advantages*/
+.advantages-appa .sec-advantages div {
+  animation: rotate 1s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Rotate the hero-logo*/
+.hero-logo {
+  animation: rotate 2s infinite;
+  animation-delay: 0.7s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+/* js applied */
+.animate-on-scroll {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.animate-on-scroll.animated {
+  opacity: 1;
+  visibility: visible;
+}

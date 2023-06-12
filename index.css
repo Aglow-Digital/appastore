@@ -15,6 +15,7 @@ header {
   top: 0;
   background-color: aliceblue;
   box-shadow: 1px 1px 5px grey;
+  z-index: 1000;
 }
 .header-div {
   display: flex;
@@ -42,6 +43,15 @@ header {
   background-color: #ef7822;
   gap: 40px;
 }
+
+.curved-img {
+  margin-top: -29rem;
+  margin-bottom: 3rem;
+  background-image: url("./images/bgUps.jpg");
+  height: 500px;
+  width: auto;
+}
+
 .hero-logo {
   width: 480px;
   height: 480px;
@@ -93,7 +103,7 @@ nav {
 }
 #navHeading {
   cursor: pointer;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 14px;
 }
 .product-p {
@@ -149,10 +159,27 @@ nav {
   font-weight: 700;
   padding-top: 8px;
 }
+/* where */
 .Where-appa {
   text-align: center;
   background-color: #ef7822;
 }
+
+.where_1st_img {
+  margin-bottom: -15rem;
+  margin-top: 3rem;
+  background-image: url("./images/A2.jpg");
+  height: 300px;
+  width: auto;
+}
+.where_2nd_img {
+  margin-top: -14rem;
+  margin-bottom: 2rem;
+  background-image: url("./images/A1.jpg");
+  height: 370px;
+  width: auto;
+}
+
 .area {
   padding: 2rem;
   display: flex;
@@ -231,21 +258,42 @@ nav {
   margin-top: 15px;
   letter-spacing: 1px;
 }
+
+/* Footer */
+
 .footer {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: start;
   color: #ffff;
   padding: 4.5rem 1rem;
   margin-top: 3rem;
 }
+
 .footer-main {
   background: #8f4c1a;
+  /* clip-path: polygon(
+    72% 13%,
+    90% 21%,
+    100% 31%,
+    100% 53%,
+    100% 100%,
+    0 100%,
+    0 15%,
+    32% 10%,
+    53% 9%
+  ); */
+}
+.footer-sub {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
 }
 .footer-sub p {
-  padding: 10px 0;
-  font-size: 11px;
+  padding: 12px 0;
+  font-size: 14px;
 }
+
 .footer-img {
   display: block;
   width: 100px;
@@ -271,6 +319,9 @@ hr {
 }
 
 @media (max-width: 913px) {
+  .footer-main {
+    clip-path: none;
+  }
   .header-div {
     display: unset;
     /* margin-right: -10px; */
@@ -381,6 +432,22 @@ hr {
   }
 }
 @media (max-width: 500px) {
+  .footer-sub {
+    margin: 0 1rem;
+  }
+  .footer-sub p {
+    padding: 10px 0;
+    font-size: 12px;
+  }
+  #navHeading {
+    margin-bottom: -0.5rem;
+  }
+  header {
+    padding: 0.84rem;
+  }
+  .header-div button {
+    display: none;
+  }
   .where img {
     height: 50px;
   }
